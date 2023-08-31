@@ -1,0 +1,21 @@
+{
+  "name": "@arcxp/shared-powerup-composer-utils",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/arcxp/arcxp-shared-components.git",
+    "directory": "src/utils/powerup-composer-utils"
+  },
+  "author": "",
+  "license": "MIT",
+  "gitHead": "6bf1f2d2f84f22f84e17328e2b1b5d0e75f43d4c"
+}

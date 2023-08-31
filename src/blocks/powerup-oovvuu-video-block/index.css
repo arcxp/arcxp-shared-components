@@ -1,0 +1,26 @@
+#ovx-plugin-root > div > div {
+  margin: 0;
+  width: 100%;
+  max-width: unset;
+  height: 100%;
+}
+
+.ovx-is-floatable {
+  position: unset !important;
+  bottom: unset !important;
+  right: unset !important;
+  max-width: unset !important;
+  width: unset !important;
+  z-index: unset !important;
+}
+.ovx-is-floatable .ovx-player {
+  border-radius: unset !important;
+  overflow: unset !important;
+  box-shadow: unset !important;
+}
+.ovx-float-placeholder::before {
+  display: unset !important;
+}
+.ovx-is-floatable .ovx-float-controls {
+  display: none !important;
+}
