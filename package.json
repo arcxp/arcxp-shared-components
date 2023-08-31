@@ -1,0 +1,37 @@
+{
+  "name": "arcxp-shared-components",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "node ./scripts/build src/blocks && node ./scripts/build src/components"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:arcxp/arcxp-shared-components.git"
+  },
+  "author": "Arc XP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arcxp/arcxp-shared-components/issues"
+  },
+  "homepage": "https://github.com/arcxp/arcxp-shared-components#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.22.11",
+    "@babel/preset-env": "7.22.10",
+    "@babel/preset-react": "7.22.5",
+    "globby": "10.0.2",
+    "node-fs-extra": "0.8.2",
+    "lerna": "7.1.5"
+  },
+  "description": "",
+  "workspaces": [
+    "src/blocks/*",
+    "src/components/*",
+    "src/utils/*"
+  ]
+}
