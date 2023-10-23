@@ -8,7 +8,8 @@
   },
   "files": [
     "build",
-    "index.css"
+    "index.css",
+    "README.md"
   ],
   "main": "build/index.jsx",
   "repository": {

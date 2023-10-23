@@ -8,7 +8,8 @@
     "access": "public"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "README.md"
   ],
   "repository": {
     "type": "git",
