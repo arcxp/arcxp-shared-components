@@ -1,21 +1,21 @@
 # Power Up Oovvuu Video
-This packages provides the full Power Up to: 
+This package provides the full Power Up to: 
 - authenticate with Oovvuu
-- find and select Video(s) in Oovvuu Video
+- find and select video(s) in Oovvuu Video
 - inject Oovvuu data into story ANS
 
-Full integration steps available in [Arc XP's Oovvuu Power Up](https://docs.arcxp.com/alc/en/arc-xp-s-oovvuu-power-up?sys_kb_id=9e662a7c474abd10eee38788436d430f&id=kb_article_view&sysparm_rank=2&sysparm_tsqueryId=fab355f587ce3110637f315d0ebb3588)
+Full integration steps are available in [Arc XPs Oovvuu Power Up](https://docs.arcxp.com/alc/en/arc-xp-s-oovvuu-power-up?sys_kb_id=9e662a7c474abd10eee38788436d430f&id=kb_article_view&sysparm_rank=2&sysparm_tsqueryId=fab355f587ce3110637f315d0ebb3588)
 
 
 ## Required environment variables
-For this Power Up to work, the following values need to be provided: 
+For this Power Up to work, you must provide the following: 
 
 ```
- OOVVUU_CLIENTID: 'unqie client ID, provided by Oovvuu',
+ OOVVUU_CLIENTID: 'unique client ID, provided by Oovvuu',
  OOVVUU_SCRIPT_PATH: 'script to initiate login, provided by Oovvuu',
 ```
 
-There are additional steps required with Oovvuu, read the document linked above for further information.
+Oovvuu requires additional steps. Read the document linked above for further information.
 
 ## Saved data
 The data returned from the Power Up are in the following format: 
@@ -25,10 +25,10 @@ The data returned from the Power Up are in the following format:
   _id: String // unique ID in context of this story, set by Composer
   embed: {
     config: {
-      displayTitle: String // Title of the Video or Playlist, received from Oovvuu
+      displayTitle: String // title of the Video or Playlist, received from Oovvuu
       embedId: String // unique ID for Video or Playlist, received from Oovvuu
       playerScriptUrl: String // public script path to load Oovvuu embed, received from Oovvuu
-      thumbnailImageUrl: String // path to thumbnail image at Oovvuu, to be used with resizer, received from Oovvuu
+      thumbnailImageUrl: String // path to thumbnail image at Oovvuu, to be used with Resizer, received from Oovvuu
     },
     id: String
     url: String // fixed value '/', set by Power Up

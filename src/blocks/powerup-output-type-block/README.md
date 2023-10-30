@@ -1,5 +1,5 @@
 # Power Up outputType
-This packages provides an outputType to be used for Power Ups with only the bare necessities, excluding any additional functionality commonly added (Analytics, Ads, etc.). It should only be used for internal usage of the Power Up. 
+This package provides an outputType to use for Power Ups with only the bare necessities, excluding any additional functionality commonly added (Analytics, Ads, etc.). Use this package only internally with Power Ups.
 
 ## Restricting Power Up access
 If the Power Up should not be reached from outside of Arc XPs tools, add a redirect rule in Delivery > Redirect UI from the Home screen. Inside Composer, only use the *.arcpublishing.com domain.

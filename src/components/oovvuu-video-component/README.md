@@ -1,12 +1,12 @@
 # Oovvuu Video Component
-This packages provides the React JSX Component for Oovvuu Video with the expected input from the Power Up OOvvuu Video Block.
+This package provides the React JSX Component for Oovvuu Video with the expected input from the Power Up Oovvuu Video Block.
 
-This Component requires to be part of the Server Side render and does not support lazy-loading Client Side.
+This Component must be part of the server-side render and does not support lazy-loading client-side.
 
-Full integration steps available in [Arc XP's Oovvuu Power Up](https://docs.arcxp.com/alc/en/arc-xp-s-oovvuu-power-up?sys_kb_id=9e662a7c474abd10eee38788436d430f&id=kb_article_view&sysparm_rank=2&sysparm_tsqueryId=fab355f587ce3110637f315d0ebb3588)
+Full integration steps are available in [Arc XPs Oovvuu Power Up](https://docs.arcxp.com/alc/en/arc-xp-s-oovvuu-power-up?sys_kb_id=9e662a7c474abd10eee38788436d430f&id=kb_article_view&sysparm_rank=2&sysparm_tsqueryId=fab355f587ce3110637f315d0ebb3588)
 
 ## required fields
-If the provided Power Up is used to place the `custom_embed` data, then it is already following the expected format. If a custom Power Up is used or the data is provided through migration, add the following format as the prop `element` on the Component:
+If you use the provided Power Up to place the `custom_embed` data, then it is already follows the expected format. If you use a custom Power Up or the data is provided through migration, add the following format as the prop `element` on the Component:
 
 ```
 {
@@ -15,18 +15,18 @@ If the provided Power Up is used to place the `custom_embed` data, then it is al
       embedId: String // unique ID inside of Oovvuu Video, to display selected Video(s)
       playerScriptUrl: String // public script path for the embed selected above
     }
-    id: String // unqiue ID inside this page-load (commonly inside a story), placed by Power Up
+    id: String // unique ID inside this page-load (commonly inside a story), placed by Power Up
   }
-  _id: String // unqiue Arc UUID inside this page-load (commonly inside a story), placed by Composer
+  _id: String // unique Arc UUID inside this page-load (commonly inside a story), placed by Composer
 }
 ```
 ## Included functionality
 
-### Conditional script include
-The public script path for Oovvuu is included as part of the the Power Up data. The script will only be loaded if the Component is part of the page load.
+### Conditional script includes
+The public script path for Oovvuu is included as part of the Power Up data. The script will loads only if the Component is part of the page load.
 
 ### Single script load
-The public script path for Oovvuu is only added once, even if multiple Components are loaded on the page. Once the script is included, only `window.oovvuuRuntime();` is called to trigger Oovvuu to look for new Video data on the page.
+The public script path for Oovvuu is added only once, even if multiple Components are loaded on the page. After the script is included, only `window.oovvuuRuntime();` is called to trigger Oovvuu to look for new Video data on the page.
 
 ## How to use
 Add this Component as a dependency in `package.json` with the newest version. Then import and use the Component as displayed in the following example: 
@@ -54,7 +54,7 @@ export default ArticleBody = () => {
             return <></>;
         }
       }
-      ... // treat all other types
+      // treat all other types
       default:
         return null;
     }
