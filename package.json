@@ -26,7 +26,7 @@
     "@babel/preset-react": "7.22.5",
     "globby": "10.0.2",
     "node-fs-extra": "0.8.2",
-    "lerna": "7.1.5"
+    "lerna": "7.2.0"
   },
   "description": "",
   "workspaces": [
